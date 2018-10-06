@@ -28,8 +28,16 @@ Follow these steps to prepare the development environment for the IoT DevKit:
   * Windows
 
     ```JSON
-    "arduino.path": "C:\\Program Files (x86)\\Arduino",
-    "arduino.additionalUrls": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azureboard_index.json"
+     "arduino.path": "C:/Program Files (x86)/Arduino",
+    "arduino.commandPath": "run-arduino.bat",
+    "arduino.logLevel": "info",
+    "arduino.enableUSBDetection": true,
+    "arduino.disableTestingOpen": false,
+    "arduino.skipHeaderProvider": false,
+    "arduino.additionalUrls": [
+    "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/master/package_azureboard_index.json"
+    ],
+    "arduino.defaultBaudRate": 115200,
     ```
 
   * macOS
